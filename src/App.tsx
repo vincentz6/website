@@ -1,23 +1,13 @@
 import "@mantine/core/styles.css";
 
-import {
-  AppShell,
-  MantineProvider,
-  Burger,
-  Group,
-  useMantineColorScheme,
-  ActionIcon,
-} from "@mantine/core";
-import { IconSun, IconMoon } from "@tabler/icons-react";
+import { AppShell, MantineProvider, Burger, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Router } from "./Router";
 import { theme } from "./theme";
-import cx from "clsx";
+import { ColorSchemeToggle } from "./components/ColorSchemeToggle/ColorSchemeToggle";
 
 export default function App() {
   const [opened, { toggle }] = useDisclosure();
-  // const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  // const dark = colorScheme === "dark";
 
   return (
     <MantineProvider theme={theme} defaultColorScheme="light">
@@ -40,6 +30,7 @@ export default function App() {
               hiddenFrom="sm"
               size="sm"
             />
+            <ColorSchemeToggle />
           </Group>
         </AppShell.Header>
         <AppShell.Navbar
