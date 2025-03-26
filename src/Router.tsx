@@ -1,10 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Homepage } from "./pages/Homepage";
+import { AppShellLayout } from "./components/AppShellLayout/AppShellLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Homepage />,
+    element: (
+      <AppShellLayout>
+        <Homepage />
+      </AppShellLayout>
+    ),
   },
 ]);
 
