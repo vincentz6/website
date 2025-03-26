@@ -1,6 +1,8 @@
-import { AppShell, Group, Burger } from "@mantine/core";
+import { AppShell, Group } from "@mantine/core";
 import { ColorSchemeToggle } from "../ColorSchemeToggle/ColorSchemeToggle";
 import { useDisclosure } from "@mantine/hooks";
+import classes from "./AppShellLayout.module.css";
+import { Burger } from "../Burger/Burger";
 
 export function AppShellLayout({ children }: { children: React.ReactNode }) {
   const [opened, { toggle }] = useDisclosure();
@@ -18,19 +20,14 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
       withBorder={false}
     >
       <AppShell.Header>
-        <Group h="100%" px="xs">
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+        <Group className={classes.header_group}>
+          <Burger opened={opened} onClick={toggle} />
           <ColorSchemeToggle />
         </Group>
       </AppShell.Header>
-      <AppShell.Navbar
-        p="md"
-        style={(theme) => ({
-          boxShadow: theme.shadows.xl,
-        })}
-      >
+      <AppShell.Navbar className={classes.navbar}>
         <Group>
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+          <Burger opened={opened} onClick={toggle} />
         </Group>
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>

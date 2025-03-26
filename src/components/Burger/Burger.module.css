@@ -1,0 +1,6 @@
+.burger {
+    --burger-color: var(--mantine-color-lavender-2);
+    position: relative;
+    z-index: 1000;
+  }
+  
