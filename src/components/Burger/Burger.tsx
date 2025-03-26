@@ -12,7 +12,7 @@ export function Burger({ opened, onClick }: BurgerProps) {
       opened={opened}
       onClick={onClick}
       size="sm"
-      hiddenFrom="sm"
+      hiddenFrom="lg"
       className={classes.burger}
       aria-label="Toggle navigation"
     />

@@ -1,20 +1,21 @@
 import { AppShell, Group } from "@mantine/core";
 import { ColorSchemeToggle } from "../ColorSchemeToggle/ColorSchemeToggle";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import classes from "./AppShellLayout.module.css";
 import { Burger } from "../Burger/Burger";
 
 export function AppShellLayout({ children }: { children: React.ReactNode }) {
   const [opened, { toggle }] = useDisclosure();
+  const isBreakpoint = useMediaQuery("(max-width: 1200px)");
 
   return (
     <AppShell
-      layout="alt"
+      layout={isBreakpoint ? "default" : "alt"}
       header={{ height: 60 }}
       navbar={{
         width: 300,
-        breakpoint: "sm",
-        collapsed: { mobile: !opened }, //!opened can be dynamic later
+        breakpoint: "lg",
+        collapsed: { mobile: !opened },
       }}
       padding="md"
       withBorder={false}
@@ -26,9 +27,7 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
         </Group>
       </AppShell.Header>
       <AppShell.Navbar className={classes.navbar}>
-        <Group>
-          <Burger opened={opened} onClick={toggle} />
-        </Group>
+        navbar content
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
