@@ -9,5 +9,8 @@ export const theme = createTheme({
     lavender, // use 3
     lightblue, // use 2
   },
+
+  fontFamily: 'Inter, sans-serif',
+  fontFamilyMonospace: 'Fira Code, monospace',
   
 });
