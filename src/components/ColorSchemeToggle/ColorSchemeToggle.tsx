@@ -21,11 +21,6 @@ export function ColorSchemeToggle() {
         radius="md"
         variant="gradient"
         aria-label="Toggle color scheme"
-        gradient={
-          dark
-            ? { from: "redpink.5", to: "orange.4" }
-            : { from: "lightblue.2", to: "lavender.3" }
-        }
       >
         <Tooltip label={colorSchemeLabel[colorScheme]} withArrow>
           {dark ? <IconSun /> : <IconMoon />}

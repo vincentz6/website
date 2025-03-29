@@ -1,4 +1,4 @@
-import { AppShell, Group } from "@mantine/core";
+import { AppShell, Group, Text } from "@mantine/core";
 import { ColorSchemeToggle } from "../ColorSchemeToggle/ColorSchemeToggle";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import classes from "./AppShellLayout.module.css";
@@ -27,7 +27,7 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
         </Group>
       </AppShell.Header>
       <AppShell.Navbar className={classes.navbar}>
-        navbar content
+        <Text c="text">navbar content</Text>
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
