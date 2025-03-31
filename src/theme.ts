@@ -29,31 +29,6 @@ export const theme = createTheme({
       styles: (theme) => ({
         root: {
           backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        main: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        header: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        footer: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        aside: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        navbar: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
-        },
-        asideSection: {
-          backgroundColor: theme.colors.text[0],
-          transition: 'background-color 0.3s ease',
         },
       }),
 
