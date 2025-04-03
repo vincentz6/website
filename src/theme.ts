@@ -1,45 +1,36 @@
-import { createTheme, virtualColor, AppShell } from '@mantine/core';
+import { createTheme, virtualColor, } from '@mantine/core';
 import { redpink, orange, lavender, lightblue, } from './colors';
 
 export const theme = createTheme({
-  
-  colors: {
-    redpink, // use 5
-    orange, // use 4
-    lavender, // use 3
-    lightblue, // use 2
 
-    text: virtualColor({
-      name: 'text',
-      dark: 'blue',
-      light: 'dark',
+  colors: {
+    redpink,
+    orange,
+    lavender,
+    lightblue,
+
+    gradient1: virtualColor({
+      name: 'gradient1',
+      dark: 'lavender',
+      light: 'redpink',
+    }),
+
+    gradient2: virtualColor({
+      name: 'gradient2',
+      dark: 'lightblue',
+      light: 'orange',
     }),
   },
+
+  primaryColor: 'dark',
+  primaryShade: { dark: 0, light: 6 },
 
   fontFamily: 'Inter, sans-serif',
   fontFamilyMonospace: 'Fira Code, monospace',
   
   autoContrast: true,
-  cursorType: 'pointer',
-
-  // defaultGradient:{ from: "redpink", to: "orange", deg: 45 },
+  cursorType: 'default',
   
   components: {
-    AppShell: AppShell.extend({
-      styles: (theme) => ({
-        main: {
-          backgroundColor: theme.colors.text[0],
-        },
-        header: {
-          backgroundColor: theme.colors.text[0],
-          color: theme.colors.text[5],
-        },
-        navbar: {
-          backgroundColor: theme.colors.text[0],
-          color: theme.colors.text[5],
-        },
-      }),
-
-    }),
   },
 });

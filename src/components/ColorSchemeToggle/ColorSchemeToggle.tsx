@@ -27,7 +27,11 @@ export function ColorSchemeToggle() {
             : { from: "lavender", to: "lightblue", deg: 45 }
         }
       >
-        <Tooltip label={colorSchemeLabel[colorScheme]} withArrow>
+        <Tooltip
+          label={colorSchemeLabel[colorScheme]}
+          withArrow
+          transitionProps={{ transition: "fade", duration: 300 }}
+        >
           {dark ? <IconSun /> : <IconMoon />}
         </Tooltip>
       </ActionIcon>

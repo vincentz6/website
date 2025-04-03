@@ -1,5 +1,4 @@
 .navbar {
-    box-shadow: var(--mantine-shadow-xl);
     padding: var(--mantine-spacing-md);
 }
 
@@ -7,4 +6,5 @@
     height: 100%;
     padding-left: var(--mantine-spacing-xs);
     padding-right: var(--mantine-spacing-xs);
+    box-shadow: var(--mantine-shadow-xl);
 }

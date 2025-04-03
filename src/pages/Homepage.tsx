@@ -12,7 +12,7 @@ export function Homepage() {
       <Button
         onClick={clearColorScheme}
         variant="gradient"
-        gradient={{ from: "lavender", to: "lightblue", deg: 90 }}
+        gradient={{ from: "gradient1", to: "gradient2", deg: 90 }}
       >
         Clear
       </Button>
