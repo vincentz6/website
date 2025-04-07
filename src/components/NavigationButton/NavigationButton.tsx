@@ -1,5 +1,6 @@
 import { UnstyledButton } from "@mantine/core";
 import { ReactNode } from "react";
+import { useNavigation } from "../Navigation/Navigation";
 import classes from "./NavigationButton.module.css";
 
 type NavigationButtonProps = {
@@ -11,6 +12,7 @@ export function NavigationButton({
   children,
   targetId,
 }: NavigationButtonProps) {
+  const onNavigate = useNavigation();
   const handleClick = () => {
     const section = document.getElementById(targetId);
     if (section) {
@@ -20,7 +22,15 @@ export function NavigationButton({
         inline: "nearest",
       });
     }
+
+    if (onNavigate) {
+      onNavigate();
+    }
   };
 
-  return <UnstyledButton onClick={handleClick}>{children}</UnstyledButton>;
+  return (
+    <UnstyledButton onClick={handleClick} className={classes.navbutton}>
+      {children}
+    </UnstyledButton>
+  );
 }

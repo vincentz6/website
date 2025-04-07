@@ -1,4 +1,4 @@
-import { AppShell, Group } from "@mantine/core";
+import { AppShell, Group, ScrollArea } from "@mantine/core";
 import { ColorSchemeToggle } from "../ColorSchemeToggle/ColorSchemeToggle";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./AppShellLayout.module.css";
@@ -30,7 +30,7 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
             <Burger opened={opened} onClick={toggle} />
           </Group>
 
-          <Navigation />
+          <Navigation visibleFrom="sm" />
 
           <Group gap="xs">
             <GithubIcon />
@@ -38,8 +38,8 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
           </Group>
         </Group>
       </AppShell.Header>
-      <AppShell.Navbar className={classes.navbar}>
-        <Navigation />
+      <AppShell.Navbar className={classes.navbar} component={ScrollArea}>
+        <Navigation vertical onNavigate={toggle} />
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
