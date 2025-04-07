@@ -1,3 +1,28 @@
-.navbutton{
-    font-size: var(--mantine-font-size-xl);
-}
+.navbutton {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    border-radius: var(--mantine-radius-sm);
+    padding: 0 clamp(0.25rem, 0.3vw, 2rem);
+  }
+  
+  .navbutton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    line-height: 3rem;
+  }
+  
+  .navbutton:hover .textWrapper {
+    transform: translateY(-3rem);
+  }
+  
+  .text {
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 2rem);
+    transition: font-size 0.3s ease;
+  }
+  

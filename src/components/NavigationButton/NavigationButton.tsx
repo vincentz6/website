@@ -13,6 +13,7 @@ export function NavigationButton({
   targetId,
 }: NavigationButtonProps) {
   const onNavigate = useNavigation();
+
   const handleClick = () => {
     const section = document.getElementById(targetId);
     if (section) {
@@ -30,7 +31,10 @@ export function NavigationButton({
 
   return (
     <UnstyledButton onClick={handleClick} className={classes.navbutton}>
-      {children}
+      <span className={classes.textWrapper}>
+        <span className={classes.text}>{children}</span>
+        <span className={classes.text}>{children}</span>
+      </span>
     </UnstyledButton>
   );
 }
