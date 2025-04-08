@@ -1,12 +1,6 @@
-import { createContext, useContext } from "react";
 import { Group, Stack } from "@mantine/core";
 import { NavigationButton } from "../NavigationButton/NavigationButton";
-
-const NavigationContext = createContext<(() => void) | undefined>(undefined);
-
-export function useNavigation() {
-  return useContext(NavigationContext);
-}
+import { NavigationContext } from "./NavigationContext";
 
 type NavigationProps = {
   vertical?: boolean;
@@ -23,7 +17,12 @@ export function Navigation({
 
   return (
     <NavigationContext.Provider value={onNavigate}>
-      <Wrapper visibleFrom={visibleFrom} gap="xl">
+      <Wrapper
+        visibleFrom={visibleFrom}
+        gap="xl"
+        align="stretch"
+        justify="center"
+      >
         <NavigationButton targetId="home">HOME</NavigationButton>
         <NavigationButton targetId="about">ABOUT</NavigationButton>
         <NavigationButton targetId="projects">PROJECTS</NavigationButton>

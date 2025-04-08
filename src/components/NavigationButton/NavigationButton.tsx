@@ -1,6 +1,6 @@
 import { UnstyledButton } from "@mantine/core";
 import { ReactNode } from "react";
-import { useNavigation } from "../Navigation/Navigation";
+import { useNavigation } from "../Navigation/NavigationContext";
 import classes from "./NavigationButton.module.css";
 
 type NavigationButtonProps = {
