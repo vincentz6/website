@@ -13,28 +13,26 @@ export function ColorSchemeToggle() {
   };
 
   return (
-    <>
-      <ActionIcon
-        className={classes.toggle}
-        onClick={toggleColorScheme}
-        size="lg"
-        radius="md"
-        variant="gradient"
-        aria-label="Toggle color scheme"
-        gradient={
-          dark
-            ? { from: "redpink", to: "orange", deg: 45 }
-            : { from: "lavender", to: "lightblue", deg: 45 }
-        }
+    <ActionIcon
+      className={classes.toggle}
+      onClick={toggleColorScheme}
+      size="lg"
+      radius="md"
+      variant="gradient"
+      aria-label="Toggle color scheme"
+      gradient={
+        dark
+          ? { from: "redpink", to: "orange", deg: 45 }
+          : { from: "lavender", to: "lightblue", deg: 45 }
+      }
+    >
+      <Tooltip
+        label={colorSchemeLabel[colorScheme]}
+        withArrow
+        transitionProps={{ transition: "fade", duration: 300 }}
       >
-        <Tooltip
-          label={colorSchemeLabel[colorScheme]}
-          withArrow
-          transitionProps={{ transition: "fade", duration: 300 }}
-        >
-          {dark ? <IconSun /> : <IconMoon />}
-        </Tooltip>
-      </ActionIcon>
-    </>
+        {dark ? <IconSun /> : <IconMoon />}
+      </Tooltip>
+    </ActionIcon>
   );
 }

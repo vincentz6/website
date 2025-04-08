@@ -1,5 +1,4 @@
 import { Burger as MantineBurger } from "@mantine/core";
-import classes from "./Burger.module.css";
 
 interface BurgerProps {
   opened: boolean;
@@ -11,9 +10,9 @@ export function Burger({ opened, onClick }: BurgerProps) {
     <MantineBurger
       opened={opened}
       onClick={onClick}
-      size="sm"
+      size="md"
       hiddenFrom="sm"
-      className={classes.burger}
+      color="gradient1"
       aria-label="Toggle navigation"
     />
   );
