@@ -7,7 +7,7 @@ const lorem =
 export function Homepage() {
   return (
     <>
-      <Avatar src="src/assets/react.svg" alt="React Logo" />
+      <Avatar />
       {Array(6)
         .fill(0)
         .map((_, index) => (
