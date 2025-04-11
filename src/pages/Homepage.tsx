@@ -1,4 +1,4 @@
-import { Text } from "@mantine/core";
+import { Text, Button } from "@mantine/core";
 import { Avatar } from "../components/Avatar/Avatar";
 
 const lorem =
@@ -8,6 +8,7 @@ export function Homepage() {
   return (
     <>
       <Avatar />
+      <Button>HELLO</Button>
       {Array(6)
         .fill(0)
         .map((_, index) => (

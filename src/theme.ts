@@ -1,5 +1,6 @@
 import { createTheme, virtualColor, } from '@mantine/core';
 import { redpink, orange, lavender, lightblue, } from './colors';
+import './fonts.css';
 
 export const theme = createTheme({
 
@@ -28,7 +29,6 @@ export const theme = createTheme({
   fontFamily: 'Inter, sans-serif',
   fontFamilyMonospace: 'Fira Code, monospace',
   
-  autoContrast: true,
   cursorType: 'default',
   
   components: {
