@@ -1,5 +1,5 @@
 import { Text, Button } from "@mantine/core";
-import { Avatar } from "../components/Avatar/Avatar";
+import { Welcome } from "../components/Welcome/Welcome";
 
 const lorem =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam, ex cum repellat alias ea nemo. Ducimus ex nesciunt hic ad saepe molestiae nobis necessitatibus laboriosam officia, reprehenderit, earum fugiat?";
@@ -7,7 +7,7 @@ const lorem =
 export function Homepage() {
   return (
     <>
-      <Avatar />
+      <Welcome />
       <Button>HELLO</Button>
       {Array(6)
         .fill(0)

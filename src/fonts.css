@@ -3,3 +3,7 @@
     src: local('Inter'), url('/fonts/Inter.ttf') format('truetype');
   }
   
+@font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/fonts/NeueHaasDisplay.ttf') format('truetype');
+}

@@ -1,4 +1,4 @@
-import { createTheme, virtualColor, } from '@mantine/core';
+import { createTheme, virtualColor,} from '@mantine/core';
 import { redpink, orange, lavender, lightblue, } from './colors';
 import './fonts.css';
 
@@ -28,9 +28,14 @@ export const theme = createTheme({
 
   fontFamily: 'Inter, sans-serif',
   fontFamilyMonospace: 'Fira Code, monospace',
-  
+  headings: {
+    fontFamily: 'Neue Haas Display, sans-serif',
+  },
+
+  defaultRadius: 'sm',
   cursorType: 'default',
   
   components: {
   },
+
 });
