@@ -1,6 +1,12 @@
-.title {
-    font-size: 6em;
+.welcome {
+    height: calc(100vh - 60px);
+  }
+  
+  .title {
+    font-size: 5vw;
     font-family: 'Neue Haas Display', sans-serif;
-    display: inline-block;
+    display: block;
     white-space: pre-line;
-}
+    min-width: 15ch;
+  }
+  
