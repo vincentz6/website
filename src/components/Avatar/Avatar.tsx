@@ -1,5 +1,6 @@
 import { Box, Image } from "@mantine/core";
 import classes from "./Avatar.module.css";
+import avatar from "../../assets/avatar.png";
 
 export function Avatar() {
   const path =
@@ -19,11 +20,7 @@ export function Avatar() {
       </svg>
 
       <Box className={classes.imageWrapper}>
-        <Image
-          src="../src/assets/avatar.png"
-          className={classes.image}
-          alt="Avatar of Me"
-        />
+        <Image src={avatar} className={classes.image} alt="Avatar of Me" />
       </Box>
     </Box>
   );
