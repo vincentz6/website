@@ -20,7 +20,7 @@ export function Avatar() {
 
       <Box className={classes.imageWrapper}>
         <Image
-          src="src/assets/avatar.png"
+          src="../src/assets/avatar.png"
           className={classes.image}
           alt="Avatar of Me"
         />
