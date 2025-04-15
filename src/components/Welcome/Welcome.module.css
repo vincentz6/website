@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 61.99em){
+  .welcome {
+    margin-top: 1em;
+  }
   .title{
     font-size: 8vw;
     text-align: center;
