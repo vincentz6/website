@@ -1,12 +1,26 @@
 .welcome {
-    height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  align-items: center;
   }
-  
-  .title {
-    font-size: 5vw;
-    font-family: 'Neue Haas Display', sans-serif;
-    display: block;
-    white-space: pre-line;
-    min-width: 15ch;
+
+.title {
+  font-size: clamp(2em, 5.5vw, 6em);
+  font-family: 'Neue Haas Display', sans-serif;
+  display: block;
+  white-space: pre-line;
+  transition: font-size 0.3s ease;
+  min-width: 20ch;
+  min-height: 5.5ch;
+}
+
+.chevron {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 61.99em){
+  .title{
+    font-size: 8vw;
+    text-align: center;
   }
-  
+}
