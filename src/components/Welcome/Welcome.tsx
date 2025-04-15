@@ -18,11 +18,13 @@ export function Welcome() {
             sequence={[
               "Hello! I'm Vincent,\n Aspiring Developer.",
               6000,
-              "Hello! I'm Vincent,\n Description1.",
+              "Hello! I'm Vincent,\n Gym Enthusiast.",
               2000,
-              "Hello! I'm Vincent,\n Description2.",
+              "Hello! I'm Vincent,\n Knowledge Seeker.",
               2000,
-              "Hello! I'm Vincent,\n Description3.",
+              "Hello! I'm Vincent,\n Gaming Enjoyer.",
+              2000,
+              "Hello! I'm Vincent,\n Language Learner.",
               2000,
             ]}
             wrapper="span"

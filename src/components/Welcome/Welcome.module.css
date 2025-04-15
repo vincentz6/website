@@ -1,6 +1,7 @@
 .welcome {
   height: calc(100vh - 60px);
   align-items: center;
+  margin-bottom: 1em;
   }
 
 .title {
@@ -10,20 +11,20 @@
   white-space: pre-line;
   transition: font-size 0.3s ease;
   min-width: 20ch;
-  min-height: 5.5ch;
+  min-height: 5ch;
 }
 
 .chevron {
-  width: 64px;
-  height: 64px;
+  width: 4em;
+  height: 4em;
 }
 
 @media (max-width: 61.99em){
   .welcome {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
   .title{
-    font-size: 8vw;
+    font-size: 7.5vw;
     text-align: center;
   }
 }
