@@ -15,18 +15,7 @@ export function NavigationButton({
   const onNavigate = useNavigation();
 
   const handleClick = () => {
-    const section = document.getElementById(targetId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-    }
-
-    if (onNavigate) {
-      onNavigate();
-    }
+    onNavigate?.(targetId);
   };
 
   return (

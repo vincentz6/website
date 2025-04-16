@@ -22,9 +22,9 @@ export function Welcome() {
               2000,
               "Hello! I'm Vincent,\n Knowledge Seeker.",
               2000,
-              "Hello! I'm Vincent,\n Gaming Enjoyer.",
+              "Hello! I'm Vincent,\n Tech Enjoyer.",
               2000,
-              "Hello! I'm Vincent,\n Language Learner.",
+              "Hello! I'm Vincent,\n Gamer too.",
               2000,
             ]}
             wrapper="span"
@@ -36,6 +36,10 @@ export function Welcome() {
           variant="transparent"
           size="auto"
           className={classes.chevronWrapper}
+          onClick={() => {
+            const section = document.getElementById("about");
+            section?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           <IconChevronDown className={classes.chevron} />
         </ActionIcon>

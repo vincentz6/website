@@ -10,7 +10,7 @@
   display: block;
   white-space: pre-line;
   transition: font-size 0.3s ease;
-  min-width: 20ch;
+  min-width: 14ch;
   min-height: 5ch;
 }
 
