@@ -41,7 +41,7 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
       <AppShell.Navbar className={classes.navbar} component={ScrollArea}>
         <Navigation vertical onNavigate={toggle} />
       </AppShell.Navbar>
-      <AppShell.Main>{children}</AppShell.Main>
+      <AppShell.Main className={classes.main}>{children}</AppShell.Main>
     </AppShell>
   );
 }

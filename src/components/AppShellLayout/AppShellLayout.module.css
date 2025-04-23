@@ -8,3 +8,7 @@
     padding-right: var(--mantine-spacing-xs);
     box-shadow: var(--mantine-shadow-xl);
 }
+
+.main {
+    overflow-x: hidden;
+}

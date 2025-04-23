@@ -1,4 +1,4 @@
-import { Text, Button } from "@mantine/core";
+import { Text } from "@mantine/core";
 import { Welcome } from "../components/Welcome/Welcome";
 import { About } from "../components/About/About";
 const lorem =
@@ -9,13 +9,6 @@ export function Homepage() {
     <>
       <Welcome />
       <About />
-      {Array(6)
-        .fill(0)
-        .map((_, index) => (
-          <Text size="lg" key={index} my="md" maw={600} mx="auto">
-            {lorem}
-          </Text>
-        ))}
       {Array(6)
         .fill(0)
         .map((_, index) => (
