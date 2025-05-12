@@ -38,7 +38,12 @@ export function Welcome() {
           className={classes.chevronWrapper}
           onClick={() => {
             const section = document.getElementById("about");
-            section?.scrollIntoView({ behavior: "smooth" });
+            if (section)
+              window.scrollTo({
+                behavior: "smooth",
+                top:
+                  section.getBoundingClientRect().top + window.pageYOffset - 60,
+              });
           }}
         >
           <IconChevronDown className={classes.chevron} />

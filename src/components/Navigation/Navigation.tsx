@@ -16,13 +16,16 @@ export function Navigation({
   const Wrapper = vertical ? Stack : Group;
 
   const navigate = (targetId: string) => {
-    const section = document.getElementById(targetId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
+    if (targetId === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.getElementById(targetId);
+      if (section) {
+        window.scrollTo({
+          behavior: "smooth",
+          top: section.getBoundingClientRect().top + window.pageYOffset - 60,
+        });
+      }
     }
 
     if (onNavigate) {

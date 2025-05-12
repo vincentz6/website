@@ -16,7 +16,7 @@ export function Heading({ children, id }: HeadingProps) {
       <motion.div
         className={classes.marquee}
         animate={{ x: ["0%", "-50%"] }}
-        transition={{ duration: 30, ease: "linear", repeat: Infinity }}
+        transition={{ duration: 300, ease: "linear", repeat: Infinity }}
       >
         <div className={classes.marqueeGroup}>
           <Title className={classes.heading}>{items}</Title>
