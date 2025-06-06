@@ -5,9 +5,17 @@ import classes from "./AppShellLayout.module.css";
 import { Burger } from "../Burger/Burger";
 import { GithubIcon } from "../GithubIcon/GithubIcon";
 import { Navigation } from "../Navigation/Navigation";
+import { useEffect } from "react";
 
 export function AppShellLayout({ children }: { children: React.ReactNode }) {
   const [opened, { toggle }] = useDisclosure();
+
+  useEffect(() => {
+    document.body.style.overflow = opened ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [opened]);
 
   return (
     <AppShell

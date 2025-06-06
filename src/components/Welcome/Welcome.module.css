@@ -1,8 +1,7 @@
 .welcome {
   height: calc(100vh - 60px);
   align-items: center;
-  margin-bottom: 1em;
-  }
+}
 
 .title {
   font-size: clamp(2em, 5.5vw, 6em);

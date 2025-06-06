@@ -1,0 +1,57 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mantine-color-body);
+  background-color: var(--mantine-color-gradient2-0);
+  border-radius: var(--mantine-radius-md);
+}
+
+.carousel {
+  margin: 0 -16px;
+}
+
+.carousel:hover .controls {
+  opacity: 1;
+}
+
+.controls {
+  transition: opacity 150ms ease;
+  opacity: 0;
+}
+
+.root {
+  &:hover {
+    .controls {
+      opacity: 1;
+    }
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.card:active {
+  cursor: grab;
+}
+
+.image {
+  object-position: top;
+}
+
+.name {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  color: var(--mantine-color-white);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--mantine-radius-sm);
+  z-index: 1;
+}
+
+.attribution {
+  display: flex;
+  justify-content: flex-end;
+}

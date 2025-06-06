@@ -1,26 +1,23 @@
 .headingWrapper {
-    overflow: hidden;
-    white-space: nowrap;
-    border-top: 5px solid var(--mantine-color-gradient1-0);
-    border-bottom: 5px solid var(--mantine-color-gradient1-0);
-    position: relative;
-    margin: 0 -16px;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--mantine-color-gradient1-0);
+  position: relative;
+  margin: 0 -16px;
+}
   
-  .marquee {
-    display: flex;
-    width: fit-content;
-  }
+.marquee {
+  display: flex;
+  width: fit-content;
+}
   
-  .marqueeGroup {
-    display: flex;
-    width: fit-content;
-  }
+.marqueeGroup {
+  display: flex;
+  width: fit-content;
+}
   
-  .heading {
-    font-size: 4em;
-    margin-right: 0.25ch;
-    color: var(--mantine-color-gradient2-0);
-    white-space: nowrap;
-  }
-  
+.heading {
+  margin-right: 0.25ch;
+  color: var(--mantine-color-body);
+  white-space: nowrap;
+}

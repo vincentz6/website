@@ -1,9 +1,11 @@
 import { createTheme, virtualColor,} from '@mantine/core';
-import { redpink, orange, lavender, lightblue, } from './colors';
+import { redpink, orange, lavender, lightblue} from './colors';
 import './fonts.css';
 
 export const theme = createTheme({
-
+  
+  black: '#2e2e2e',
+  
   colors: {
     redpink,
     orange,
@@ -30,6 +32,10 @@ export const theme = createTheme({
   fontFamilyMonospace: 'Fira Code, monospace',
   headings: {
     fontFamily: 'Neue Haas Display, sans-serif',
+    sizes: {
+      h1: { fontSize: "4em"},
+      h2: { fontSize: "3em" },
+    }
   },
 
   defaultRadius: 'sm',

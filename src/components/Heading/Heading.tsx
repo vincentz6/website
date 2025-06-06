@@ -9,14 +9,15 @@ type HeadingProps = {
 };
 
 export function Heading({ children, id }: HeadingProps) {
-  const items = Array(5).fill(<span>{children} • </span>);
+  const text = `${children} • `;
+  const items = text.repeat(20);
 
   return (
     <div className={classes.headingWrapper} id={id}>
       <motion.div
         className={classes.marquee}
         animate={{ x: ["0%", "-50%"] }}
-        transition={{ duration: 300, ease: "linear", repeat: Infinity }}
+        transition={{ duration: 500, ease: "linear", repeat: Infinity }}
       >
         <div className={classes.marqueeGroup}>
           <Title className={classes.heading}>{items}</Title>

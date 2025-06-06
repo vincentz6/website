@@ -12,3 +12,28 @@
 .main {
     overflow-x: hidden;
 }
+
+[data-mantine-color-scheme='light'] body {
+    --mantine-color-body: #F6D8AE;
+}
+
+body {
+    background-color: var(--mantine-color-body);
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--mantine-color-gradient2-0) transparent;
+}
+
+[data-mantine-color-scheme='light'] ::selection {
+  background: var(--mantine-color-gradient2-0);
+  color: #ffffff; /* Or a readable contrast color */
+}
+
+[data-mantine-color-scheme='dark'] ::selection {
+  background: var(--mantine-color-gradient2-0);
+  color: #000000;
+}
+
+
