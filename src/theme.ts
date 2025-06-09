@@ -33,8 +33,8 @@ export const theme = createTheme({
   headings: {
     fontFamily: 'Neue Haas Display, sans-serif',
     sizes: {
-      h1: { fontSize: "4em"},
-      h2: { fontSize: "3em" },
+      h1: { fontSize: "4rem"},
+      h2: { fontSize: "3rem" },
     }
   },
 

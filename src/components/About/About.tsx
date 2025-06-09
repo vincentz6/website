@@ -6,7 +6,7 @@ import classes from "./About.module.css";
 
 export function About() {
   return (
-    <Box mt="xl" mb="6rem">
+    <Box mih="100vh" my="xl">
       <Heading id="about">ABOUT ME</Heading>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,12 @@ export function About() {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <Title order={2} mb="xs" ta={{ base: "center", sm: "left" }}>
+        <Title
+          order={2}
+          mb="xs"
+          ta={{ base: "center", sm: "left" }}
+          className={classes.title}
+        >
           Who I've Been Listening to Lately
         </Title>
       </motion.div>

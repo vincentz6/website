@@ -66,10 +66,9 @@ export function Artists() {
         <Carousel
           key={pluginReady ? "with-autoscroll" : "no-autoscroll"}
           mb="xs"
-          height={400}
-          slideSize={400}
+          h={{ base: 300, xl: 400 }}
+          slideSize={{ base: "300", xl: "400" }}
           slideGap="md"
-          type="container"
           plugins={
             pluginReady && autoscroll.current ? [autoscroll.current] : []
           }
@@ -104,7 +103,7 @@ export function Artists() {
                       src={artist.image}
                       alt="Artist Image"
                       fit="cover"
-                      h={400}
+                      h={{ base: 300, xl: 400 }}
                       className={classes.image}
                     />
                     <Title order={4} className={classes.name}>
