@@ -27,3 +27,11 @@
     text-align: center;
   }
 }
+
+@media (max-height: 650px) {
+  .welcome {
+    height: auto;
+    align-items: flex-start;
+    padding-top: 1em;
+  }
+}
