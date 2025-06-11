@@ -2,6 +2,7 @@ import { Grid, Flex, Center, ActionIcon } from "@mantine/core";
 import { TypeAnimation } from "react-type-animation";
 import { Avatar } from "../Avatar/Avatar";
 import { IconChevronDown } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 import classes from "./Welcome.module.css";
 
 export function Welcome() {
@@ -32,22 +33,41 @@ export function Welcome() {
             className={classes.title}
           />
         </Grid.Col>
-        <ActionIcon
-          variant="transparent"
-          size="auto"
-          className={classes.chevronWrapper}
-          onClick={() => {
-            const section = document.getElementById("about");
-            if (section)
-              window.scrollTo({
-                behavior: "smooth",
-                top:
-                  section.getBoundingClientRect().top + window.pageYOffset - 60,
-              });
-          }}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 2 }}
+          viewport={{ once: true }}
         >
-          <IconChevronDown className={classes.chevron} />
-        </ActionIcon>
+          <ActionIcon
+            variant="transparent"
+            size="auto"
+            className={classes.chevronWrapper}
+            onClick={() => {
+              const section = document.getElementById("about");
+              if (section)
+                window.scrollTo({
+                  behavior: "smooth",
+                  top:
+                    section.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    60,
+                });
+            }}
+          >
+            <motion.div
+              animate={{ y: [0, 4, 0] }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+            >
+              <IconChevronDown className={classes.chevron} />
+            </motion.div>
+          </ActionIcon>
+        </motion.div>
       </Grid>
     </Flex>
   );

@@ -5,9 +5,10 @@ const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 const querystring = require("querystring");
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
-const TOP_ARTISTS_ENDPOINT = "https://api.spotify.com/v1/me/top/artists?time_range=short_term&";
+const TOP_ARTISTS_ENDPOINT =
+  "https://api.spotify.com/v1/me/top/artists?time_range=short_term&";
 
-async function getAccessToken() {  
+async function getAccessToken() {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
     headers: {
@@ -22,10 +23,9 @@ async function getAccessToken() {
 
   const tokenData = await response.json();
   return tokenData.access_token;
+}
 
-};
-
-export async function handler () {
+export async function handler() {
   try {
     const access_token = await getAccessToken();
 
@@ -50,7 +50,7 @@ export async function handler () {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message || "Something went wrong" })
+      body: JSON.stringify({ error: error.message || "Something went wrong" }),
     };
   }
 }

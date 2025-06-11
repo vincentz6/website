@@ -22,7 +22,7 @@ export function ColorSchemeToggle() {
       aria-label="Toggle color scheme"
       gradient={
         dark
-          ? { from: "redpink", to: "orange", deg: 45 }
+          ? { from: "redpink", to: "coral", deg: 45 }
           : { from: "lavender", to: "lightblue", deg: 45 }
       }
     >

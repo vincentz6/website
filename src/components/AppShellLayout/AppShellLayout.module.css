@@ -1,39 +1,37 @@
 .navbar {
-    padding: var(--mantine-spacing-md);
+  padding: var(--mantine-spacing-md);
 }
 
 .header_group {
-    height: 100%;
-    padding-left: var(--mantine-spacing-xs);
-    padding-right: var(--mantine-spacing-xs);
-    box-shadow: var(--mantine-shadow-xl);
+  height: 100%;
+  padding-left: var(--mantine-spacing-xs);
+  padding-right: var(--mantine-spacing-xs);
+  box-shadow: var(--mantine-shadow-xl);
 }
 
 .main {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-[data-mantine-color-scheme='light'] body {
-    --mantine-color-body: #F6D8AE;
+[data-mantine-color-scheme="light"] body {
+  --mantine-color-body: var(--mantine-color-cream-2);
 }
 
 body {
-    background-color: var(--mantine-color-body);
+  background-color: var(--mantine-color-body);
 }
 
 * {
-    scrollbar-width: auto;
-    scrollbar-color: var(--mantine-color-gradient2-0) transparent;
+  scrollbar-width: auto;
+  scrollbar-color: var(--mantine-color-gradient2-0) transparent;
 }
 
-[data-mantine-color-scheme='light'] ::selection {
+[data-mantine-color-scheme="light"] ::selection {
   background: var(--mantine-color-gradient2-0);
   color: #ffffff; /* Or a readable contrast color */
 }
 
-[data-mantine-color-scheme='dark'] ::selection {
+[data-mantine-color-scheme="dark"] ::selection {
   background: var(--mantine-color-gradient2-0);
   color: #000000;
 }
-
-

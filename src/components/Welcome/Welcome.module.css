@@ -5,7 +5,7 @@
 
 .title {
   font-size: clamp(2em, 5.5vw, 6em);
-  font-family: 'Neue Haas Display', sans-serif;
+  font-family: "Neue Haas Display", sans-serif;
   display: block;
   white-space: pre-line;
   transition: font-size 0.3s ease;
@@ -18,11 +18,11 @@
   height: 4em;
 }
 
-@media (max-width: 61.99em){
+@media (max-width: 61.99em) {
   .welcome {
     margin-top: 0.5em;
   }
-  .title{
+  .title {
     font-size: 7.5vw;
     text-align: center;
   }
