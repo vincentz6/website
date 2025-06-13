@@ -8,7 +8,7 @@ import classes from "./Welcome.module.css";
 export function Welcome() {
   return (
     <Flex className={classes.welcome} justify="center">
-      <Grid justify="center" align="center">
+      <Grid justify="center" align="center" miw="85vw">
         <Grid.Col span={{ base: 12, md: 5 }}>
           <Center>
             <Avatar />
@@ -18,15 +18,15 @@ export function Welcome() {
           <TypeAnimation
             sequence={[
               "Hello! I'm Vincent,\n Aspiring Developer.",
-              6000,
+              2000,
               "Hello! I'm Vincent,\n Gym Enthusiast.",
-              2000,
+              1500,
               "Hello! I'm Vincent,\n Knowledge Seeker.",
-              2000,
+              1500,
               "Hello! I'm Vincent,\n Tech Enjoyer.",
-              2000,
-              "Hello! I'm Vincent,\n Gamer too.",
-              2000,
+              1500,
+              "Hello! I'm Vincent,\n Gaming Connoisseur.",
+              1500,
             ]}
             wrapper="span"
             repeat={Infinity}
