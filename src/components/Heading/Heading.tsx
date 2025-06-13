@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Title } from "@mantine/core";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import classes from "./Heading.module.css";
 
 type HeadingProps = {
