@@ -6,8 +6,10 @@ import classes from "./About.module.css";
 
 export function About() {
   return (
-    <Box mih="100vh" my="xl">
-      <Heading id="about">ABOUT ME</Heading>
+    <Box mih="100vh" py="xl" px="md" bg="gradient1" className={classes.about}>
+      <Heading id="about" color="var(--mantine-color-body)">
+        ABOUT ME
+      </Heading>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +34,7 @@ export function About() {
       >
         <Title
           order={2}
-          mb="xs"
+          pb="xs"
           ta={{ base: "center", sm: "left" }}
           className={classes.title}
         >

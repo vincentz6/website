@@ -17,7 +17,6 @@ export function AppShellLayout({ children }: { children: React.ReactNode }) {
         breakpoint: "sm",
         collapsed: { desktop: true, mobile: !opened },
       }}
-      padding="md"
       withBorder={false}
     >
       <AppShell.Header>

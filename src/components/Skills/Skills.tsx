@@ -4,8 +4,10 @@ import { Heading } from "../Heading/Heading";
 
 export function Skills() {
   return (
-    <Box mih="100vh" my="xl">
-      <Heading id="skills">SKILLS</Heading>
+    <Box mih="100vh" py="xl" bg="gradient1">
+      <Heading id="skills" color="var(--mantine-color-body)">
+        SKILLS
+      </Heading>
       <SimpleGrid
         cols={{ base: 1, sm: 2, md: 3 }}
         spacing={{ base: "sm", md: "md" }}

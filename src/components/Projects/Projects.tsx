@@ -3,8 +3,10 @@ import { Box } from "@mantine/core";
 
 export function Projects() {
   return (
-    <Box mih="100vh" my="xl">
-      <Heading id="projects">PROJECTS</Heading>
+    <Box mih="100vh" py="xl">
+      <Heading id="projects" color="gradient1">
+        PROJECTS
+      </Heading>
     </Box>
   );
 }

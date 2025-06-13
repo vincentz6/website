@@ -6,9 +6,10 @@ import classes from "./Heading.module.css";
 type HeadingProps = {
   children: ReactNode;
   id: string;
+  color?: string;
 };
 
-export function Heading({ children, id }: HeadingProps) {
+export function Heading({ children, id, color }: HeadingProps) {
   const text = `${children} • `;
   const items = text.repeat(20);
 
@@ -20,8 +21,12 @@ export function Heading({ children, id }: HeadingProps) {
         transition={{ duration: 500, ease: "linear", repeat: Infinity }}
       >
         <div className={classes.marqueeGroup}>
-          <Title className={classes.heading}>{items}</Title>
-          <Title className={classes.heading}>{items}</Title>
+          <Title className={classes.heading} c={color}>
+            {items}
+          </Title>
+          <Title className={classes.heading} c={color}>
+            {items}
+          </Title>
         </div>
       </motion.div>
     </div>

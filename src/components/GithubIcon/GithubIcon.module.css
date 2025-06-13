@@ -2,7 +2,3 @@
     transform: scale(0.90);
     transition: transform 0.1s ease;
 }
-
-.github_icon svg {
-    stroke: url(#icon-gradient);
-}

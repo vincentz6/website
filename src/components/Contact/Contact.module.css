@@ -1,0 +1,5 @@
+.contact {
+    font-size: 6rem;
+    font-family: var(--mantine-font-family-headings);
+    border-bottom: 6px solid;
+}
