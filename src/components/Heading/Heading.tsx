@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Title } from "@mantine/core";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import classes from "./Heading.module.css";
 
 type HeadingProps = {
@@ -14,24 +14,24 @@ export function Heading({ children, id, color }: HeadingProps) {
   const items = text.repeat(20);
 
   return (
-    // <div className={classes.headingWrapper} id={id}>
-    //   <motion.div
-    //     className={classes.marquee}
-    //     animate={{ x: ["0%", "-50%"] }}
-    //     transition={{ duration: 500, ease: "linear", repeat: Infinity }}
-    //   >
-    //     <div className={classes.marqueeGroup}>
-    //       <Title className={classes.heading} c={color}>
-    //         {items}
-    //       </Title>
-    //       <Title className={classes.heading} c={color}>
-    //         {items}
-    //       </Title>
-    //     </div>
-    //   </motion.div>
-    // </div>
-    <Title className={classes.heading} c={color} id={id} mx={-text.length * 10}>
-      {items}
-    </Title>
+    <div className={classes.headingWrapper} id={id}>
+      <motion.div
+        className={classes.marquee}
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ duration: 500, ease: "linear", repeat: Infinity }}
+      >
+        <div className={classes.marqueeGroup}>
+          <Title className={classes.heading} c={color}>
+            {items}
+          </Title>
+          <Title className={classes.heading} c={color}>
+            {items}
+          </Title>
+        </div>
+      </motion.div>
+    </div>
+    // <Title className={classes.heading} c={color} id={id} mx={-text.length * 10}>
+    //   {items}
+    // </Title>
   );
 }

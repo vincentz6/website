@@ -13,7 +13,7 @@ export function About() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         <Text my="xl" maw={800} mx="auto" ta="center" className={classes.text}>
@@ -29,7 +29,7 @@ export function About() {
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         <Title

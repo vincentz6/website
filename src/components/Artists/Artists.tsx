@@ -89,7 +89,7 @@ export function Artists() {
                 transition={{
                   duration: 1,
                   ease: "easeInOut",
-                  delay: 1 + index * 0.2,
+                  delay: 0.2 + index * 0.2,
                 }}
               >
                 <Card
@@ -122,7 +122,7 @@ export function Artists() {
         transition={{
           duration: 0.8,
           ease: "easeOut",
-          delay: artists.length * 0.2,
+          delay: artists.length * 0.1,
         }}
         viewport={{ once: true }}
         className={classes.attribution}
