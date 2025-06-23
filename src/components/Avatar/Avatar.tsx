@@ -22,7 +22,7 @@ export function Avatar() {
           </linearGradient>
         </defs>
 
-        <path d={path} stroke={`url(#gradient)`} fill="none" strokeWidth={1} />
+        <path d={path} stroke="none" fill={`url(#gradient)`} />
       </svg>
 
       <motion.div

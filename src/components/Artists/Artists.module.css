@@ -34,7 +34,7 @@
 }
 
 .card:hover {
-  transform: scale(0.975);
+  transform: scale(0.985);
 }
 
 .card:active {

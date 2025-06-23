@@ -13,7 +13,7 @@ export function Skills() {
   return (
     <Box mih="100vh" py="xl" px="md" bg="gradient1">
       <Heading id="skills" color="var(--mantine-color-body)">
-        SKILLS
+        WHAT I'VE LEARNED
       </Heading>
       <SimpleGrid
         cols={{ base: 1, sm: 2, lg: 3 }}

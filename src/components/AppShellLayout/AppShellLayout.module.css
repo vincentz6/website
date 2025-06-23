@@ -26,12 +26,12 @@ body {
 
 [data-mantine-color-scheme="light"] {
   scrollbar-width: auto;
-  scrollbar-color: var(--mantine-color-coral-0) var(--mantine-color-cream-1);
+  scrollbar-color: var(--mantine-color-cream-3) var(--mantine-color-cream-1);
 }
 
 [data-mantine-color-scheme="light"] ::selection {
   background: var(--mantine-color-gradient2-0);
-  color: #ffffff; /* Or a readable contrast color */
+  color: #ffffff;
 }
 
 [data-mantine-color-scheme="dark"] ::selection {

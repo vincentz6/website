@@ -11,14 +11,14 @@ export const cards = [
   {
     title: "Frontend Development",
     description:
-      "I build websites that are visually appealing and prioritize user experience. My goal is to create intuitive, responsive web applications that users enjoy interacting with.",
+      "I've built websites that are visually appealing and prioritize user experience. My goal is to create intuitive, responsive web applications that users enjoy interacting with.",
     icon: IconDeviceImacCode,
     keywords: ["HTML", "CSS", "JavaScript", "React", "Typescript"],
   },
   {
     title: "UI/UX Design",
     description:
-      "I design user interfaces that balance functionality with aesthetics, focusing on creating engaging experiences through wireframes, prototypes, and the refinement of final designs.",
+      "Designed user interfaces that balance functionality with aesthetics, focusing on creating engaging experiences through wireframes, prototypes, and the refinement of final designs.",
     icon: IconLayoutDashboard,
     keywords: ["Figma"],
   },
@@ -39,7 +39,7 @@ export const cards = [
   {
     title: "Database Management",
     description:
-      "I maintain databases to ensure smooth and efficient data storage and retrieval. Whether it's relational or NoSQL, I focus on structuring data effectively and optimizing queries.",
+      "I maintained databases to ensure smooth and efficient data storage and retrieval. Whether it's relational or NoSQL, I focus on structuring data effectively and optimizing queries.",
     icon: IconDatabase,
     keywords: ["SQL", "PostgreSQL", "MySQL", "MongoDB"],
   },
