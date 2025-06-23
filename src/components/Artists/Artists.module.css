@@ -30,9 +30,15 @@
 
 .card {
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(0.975);
 }
 
 .card:active {
+  transform: scale(1);
   cursor: grab;
 }
 
