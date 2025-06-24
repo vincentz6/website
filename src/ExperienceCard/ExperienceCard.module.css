@@ -1,0 +1,58 @@
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.left {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.right {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.circle {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--mantine-color-gradient1-6);
+  border-radius: 50%;
+  z-index: 1;
+  border: 3px solid white;
+}
+
+/* Responsive: stack vertically */
+@media (max-width: 768px) {
+  .cardWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .circle {
+    left: 50%;
+  }
+}

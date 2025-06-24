@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <Box mih="100vh" py="xl">
       <Heading id="projects" color="gradient1">
-        WHAT I'VE BUILT
+        MY PORTFOLIO
       </Heading>
     </Box>
   );

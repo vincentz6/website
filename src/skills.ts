@@ -7,7 +7,7 @@ import {
   IconRocket,
 } from "@tabler/icons-react";
 
-export const cards = [
+export const skills = [
   {
     title: "Frontend Development",
     description:

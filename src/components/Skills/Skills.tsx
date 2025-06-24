@@ -3,7 +3,7 @@ import { Heading } from "../Heading/Heading";
 import { SkillCard } from "../SkillCard/SkillCard";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { cards } from "../../skills";
+import { skills } from "../../skills";
 // import classes from "./Skills.module.css";
 
 export function Skills() {
@@ -13,7 +13,7 @@ export function Skills() {
   return (
     <Box mih="100vh" py="xl" px="md" bg="gradient1">
       <Heading id="skills" color="var(--mantine-color-body)">
-        WHAT I'VE LEARNED
+        MY SKILLSET
       </Heading>
       <SimpleGrid
         cols={{ base: 1, sm: 2, lg: 3 }}
@@ -21,9 +21,9 @@ export function Skills() {
         py="md"
         ref={containerRef}
       >
-        {cards.map((card, index) => (
+        {skills.map((skill, index) => (
           <motion.div
-            key={card.title}
+            key={skill.title}
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{
@@ -32,7 +32,7 @@ export function Skills() {
               delay: index * 0.2,
             }}
           >
-            <SkillCard {...card} />
+            <SkillCard {...skill} />
           </motion.div>
         ))}
       </SimpleGrid>

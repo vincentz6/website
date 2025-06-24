@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 900px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--mantine-color-gradient1-6);
+  transform: translateX(-50%);
+}
