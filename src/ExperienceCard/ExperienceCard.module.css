@@ -1,58 +1,46 @@
-.cardWrapper {
+.container {
   position: relative;
-  width: 100%;
-  margin: 2rem 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .card {
-  width: 100%;
-  max-width: 400px;
+  margin-left: 1.5rem;
+  max-width: 100%;
 }
 
-.left {
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.right {
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.circle {
+.dot {
   position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: var(--mantine-color-gradient1-6);
-  border-radius: 50%;
   z-index: 1;
-  border: 3px solid white;
+  left: -0.3rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--mantine-color-body);
+  border: 6px solid var(--mantine-primary-color-filled);
 }
 
-/* Responsive: stack vertically */
-@media (max-width: 768px) {
-  .cardWrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
-  .left,
-  .right {
-    justify-content: center;
+  .even {
+    flex-direction: row;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
   }
 
   .card {
-    max-width: 100%;
+    margin: 0 1.5rem;
+    max-width: 45%;
   }
 
-  .circle {
+  .dot {
     left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -1,23 +1,23 @@
-.container {
-  position: relative;
-}
-
 .timeline {
   position: relative;
-  margin: 4rem auto;
-  width: 100%;
-  max-width: 900px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 1200px;
+  margin: var(--mantine-spacing-xl) auto 0 auto;
+  padding-bottom: 3rem;
 }
 
-.timeline::before {
-  content: "";
+.line {
   position: absolute;
-  left: 50%;
   top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--mantine-color-gradient1-6);
-  transform: translateX(-50%);
+  left: 0.2rem;
+  height: 100%;
+  width: 8px;
+  background-color: var(--mantine-primary-color-filled);
+  border-radius: var(--mantine-radius-md);
+}
+
+@media (min-width: 768px) {
+  .line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

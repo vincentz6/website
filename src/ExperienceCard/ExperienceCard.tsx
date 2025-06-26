@@ -11,21 +11,21 @@ type CardProps = {
 };
 
 export function ExperienceCard({ card, index }: CardProps) {
-  const isLeft = index % 2 === 0;
+  const isEven = index % 2 === 0;
 
   return (
     <Box
-      className={`${classes.cardWrapper} ${
-        isLeft ? classes.left : classes.right
-      }`}
+      className={`${classes.container} ${isEven ? classes.even : classes.odd}`}
+      pb="2rem"
     >
-      <Box className={classes.circle} />
+      <Box className={classes.dot} />
       <Paper
         p="lg"
         shadow="md"
         radius="md"
         bg="gradient1"
         c="var(--mantine-color-body)"
+        className={classes.card}
       >
         <Title order={3}>{card.title}</Title>
         <Text size="sm">{card.date}</Text>
