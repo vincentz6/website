@@ -1,4 +1,4 @@
-import { Box, Title } from "@mantine/core";
+import { Box, Title, Text } from "@mantine/core";
 import { Heading } from "../Heading/Heading";
 import { cards } from "../../experience";
 import { ExperienceCard } from "../../ExperienceCard/ExperienceCard";
@@ -15,9 +15,12 @@ export function Experience() {
         ))}
       </Box>
 
-      <Title order={4} ta="center">
-        Next Stop . . .
+      <Title order={3} ta={{ base: "left", sm: "center" }}>
+        Next Stop?
       </Title>
+      <Text ta={{ base: "left", sm: "center" }}>
+        Currently looking for new opportunities!
+      </Text>
     </Box>
   );
 }

@@ -1,26 +1,20 @@
 export const cards = [
   {
-    title: "Experience Title",
+    title: "Relectric Car Team",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    date: "XXXX-XX-XX to XXXX-XX-XX",
+      "Founding member of a university team dedicated to converting gasoline vehicles to electric. Worked on developing a sensor network to enhance driver awareness using sensors and cameras. Designed and programmed sensor prototypes with Arduino and Python.",
+    date: "2019 - 2021",
   },
   {
-    title: "Experience Title",
+    title: "Genoptic",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    date: "XXXX-XX-XX to XXXX-XX-XX",
+      "Company-sponsored project focused on developing a plant growth optimization system. Designed the UI/UX using Figma and implemented the frontend web application with React and TypeScript. Collaborated with the backend team to integrate the frontend with the API.",
+    date: "2022 - 2023",
   },
   {
-    title: "Experience Title",
+    title: "Scrimba Frontend Developer Career Path",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    date: "XXXX-XX-XX to XXXX-XX-XX",
-  },
-  {
-    title: "Experience Title",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    date: "XXXX-XX-XX to XXXX-XX-XX",
+      "Completed the comprehensive, project-based program covering HTML, CSS, JavaScript, React, responsive design, and version control. Built real-world applications and honed practical frontend development skills through hands-on coding challenges and guided projects.",
+    date: "2025",
   },
 ];

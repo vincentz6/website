@@ -15,6 +15,10 @@
   border-radius: var(--mantine-radius-md);
 }
 
+[data-mantine-color-scheme="dark"] .line {
+  background-color: var(--mantine-color-body);
+}
+
 @media (min-width: 768px) {
   .line {
     left: 50%;

@@ -19,6 +19,11 @@
   border: 6px solid var(--mantine-primary-color-filled);
 }
 
+[data-mantine-color-scheme="dark"] .dot {
+  background-color: var(--mantine-primary-color-filled);
+  border-color: var(--mantine-color-body);
+}
+
 @media (min-width: 768px) {
   .container {
     display: flex;

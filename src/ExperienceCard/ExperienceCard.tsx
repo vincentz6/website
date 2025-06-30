@@ -1,4 +1,6 @@
 import { Box, Paper, Title, Text } from "@mantine/core";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import classes from "./ExperienceCard.module.css";
 
 type CardProps = {
@@ -11,6 +13,9 @@ type CardProps = {
 };
 
 export function ExperienceCard({ card, index }: CardProps) {
+  const containerRef = useRef(null);
+  const inView = useInView(containerRef, { once: true });
+
   const isEven = index % 2 === 0;
 
   return (
@@ -19,18 +24,28 @@ export function ExperienceCard({ card, index }: CardProps) {
       pb="2rem"
     >
       <Box className={classes.dot} />
-      <Paper
-        p="lg"
-        shadow="md"
-        radius="md"
-        bg="gradient1"
-        c="var(--mantine-color-body)"
+      <motion.div
+        initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut",
+        }}
+        ref={containerRef}
         className={classes.card}
       >
-        <Title order={3}>{card.title}</Title>
-        <Text size="sm">{card.date}</Text>
-        <Text>{card.description}</Text>
-      </Paper>
+        <Paper
+          p="lg"
+          shadow="md"
+          radius="md"
+          bg="gradient1"
+          c="var(--mantine-color-body)"
+        >
+          <Title order={3}>{card.title}</Title>
+          <Text size="sm">{card.date}</Text>
+          <Text>{card.description}</Text>
+        </Paper>
+      </motion.div>
     </Box>
   );
 }
