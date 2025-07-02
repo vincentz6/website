@@ -1,7 +1,7 @@
 import { Box, Title, Text } from "@mantine/core";
 import { Heading } from "../Heading/Heading";
 import { cards } from "../../experience";
-import { ExperienceCard } from "../../ExperienceCard/ExperienceCard";
+import { ExperienceCard } from "../ExperienceCard/ExperienceCard";
 import classes from "./Experience.module.css";
 
 export function Experience() {
@@ -18,7 +18,7 @@ export function Experience() {
       <Title order={3} ta={{ base: "left", sm: "center" }}>
         Next Stop?
       </Title>
-      <Text ta={{ base: "left", sm: "center" }}>
+      <Text ta={{ base: "left", sm: "center" }} size="lg">
         Currently looking for new opportunities!
       </Text>
     </Box>

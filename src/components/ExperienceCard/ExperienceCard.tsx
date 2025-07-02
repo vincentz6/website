@@ -43,7 +43,7 @@ export function ExperienceCard({ card, index }: CardProps) {
         >
           <Title order={3}>{card.title}</Title>
           <Text size="sm">{card.date}</Text>
-          <Text>{card.description}</Text>
+          <Text size="lg">{card.description}</Text>
         </Paper>
       </motion.div>
     </Box>

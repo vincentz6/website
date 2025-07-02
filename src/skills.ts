@@ -32,14 +32,14 @@ export const skills = [
   {
     title: "Backend Development",
     description:
-      "I have experience in building robust, scalable backend systems using various technlogies. I've created RESTful APIs and integrated databases to support frontend applications.",
+      "Experienced in building robust, scalable backend systems using various technlogies. I've created RESTful APIs and integrated databases to support frontend applications.",
     icon: IconServer,
     keywords: ["Java", "Node.js", "Django", "RESTful APIs"],
   },
   {
     title: "Database Management",
     description:
-      "I maintained databases to ensure smooth and efficient data storage and retrieval. Whether it's relational or NoSQL, I focus on structuring data effectively and optimizing queries.",
+      "Proficient in maintaining databases to ensure smooth and efficient data storage and retrieval. Whether it's relational or NoSQL, I focus on structuring data effectively and optimizing queries.",
     icon: IconDatabase,
     keywords: ["SQL", "PostgreSQL", "MySQL", "MongoDB"],
   },
