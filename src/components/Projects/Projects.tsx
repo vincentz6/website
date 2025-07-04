@@ -18,6 +18,7 @@ export function Projects() {
         controlsOffset="-xs"
         h="100%"
         px="2.5rem"
+        py="md"
         classNames={classes}
       >
         {projects.map((project, index) => (
