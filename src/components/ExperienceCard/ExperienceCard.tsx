@@ -34,13 +34,7 @@ export function ExperienceCard({ card, index }: CardProps) {
         ref={containerRef}
         className={classes.card}
       >
-        <Paper
-          p="lg"
-          shadow="md"
-          radius="md"
-          bg="gradient1"
-          c="var(--mantine-color-body)"
-        >
+        <Paper p="lg" shadow="md" radius="md" bg="gradient1" c="black">
           <Title order={3}>{card.title}</Title>
           <Text size="sm">{card.date}</Text>
           <Text size="lg">{card.description}</Text>
