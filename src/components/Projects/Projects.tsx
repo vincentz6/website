@@ -19,6 +19,9 @@ export function Projects() {
         h="100%"
         px="2.5rem"
         py="md"
+        emblaOptions={{
+          align: "start",
+        }}
         classNames={classes}
       >
         {projects.map((project, index) => (

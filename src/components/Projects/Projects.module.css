@@ -6,4 +6,5 @@
 
   background-color: var(--mantine-color-gradient1-0);
   color: white;
+  border: 2px solid var(--mantine-color-gradient2-0);
 }

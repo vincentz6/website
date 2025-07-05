@@ -37,11 +37,23 @@ export function ProjectCard({
             </Title>
             <Text>{description}</Text>
           </div>
-          <Button.Group className={classes.buttons} orientation="vertical">
-            <Button component="a" href={link} target="_blank" bg="gradient1">
+          <Button.Group className={classes.buttonGroup} orientation="vertical">
+            <Button
+              component="a"
+              href={link}
+              target="_blank"
+              bg="gradient1"
+              className={classes.button}
+            >
               VIEW PROJECT
             </Button>
-            <Button component="a" href={link} target="_blank" bg="gradient2">
+            <Button
+              component="a"
+              href={link}
+              target="_blank"
+              bg="gradient1"
+              className={classes.button}
+            >
               SOURCE CODE
             </Button>
           </Button.Group>
