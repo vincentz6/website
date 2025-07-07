@@ -1,6 +1,6 @@
 import { Box, Title, Text } from "@mantine/core";
 import { Heading } from "../Heading/Heading";
-import { cards } from "../../experience";
+import { cards } from "../../static/experience";
 import { ExperienceCard } from "../ExperienceCard/ExperienceCard";
 import classes from "./Experience.module.css";
 

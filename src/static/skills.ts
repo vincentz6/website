@@ -27,7 +27,7 @@ export const skills = [
     description:
       "Using tools like Pandas, I've analyzed and transformed data into insights that drive decision-making or simply uncover trends and patterns.",
     icon: IconChartDots,
-    keywords: ["Python", "Pandas", "NumPy"],
+    keywords: ["Python", "Pandas", "NumPy", "PySpark"],
   },
   {
     title: "Backend Development",

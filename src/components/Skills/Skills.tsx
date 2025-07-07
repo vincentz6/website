@@ -3,7 +3,7 @@ import { Heading } from "../Heading/Heading";
 import { SkillCard } from "../SkillCard/SkillCard";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { skills } from "../../skills";
+import { skills } from "../../static/skills";
 // import classes from "./Skills.module.css";
 
 export function Skills() {

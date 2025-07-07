@@ -2,7 +2,7 @@ import { Heading } from "../Heading/Heading";
 import { Box } from "@mantine/core";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { Carousel } from "@mantine/carousel";
-import { projects } from "../../projects";
+import { projects } from "../../static/projects";
 import classes from "./Projects.module.css";
 
 export function Projects() {

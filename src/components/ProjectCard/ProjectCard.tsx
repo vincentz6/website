@@ -16,6 +16,8 @@ export function ProjectCard({
   description,
   image,
   link,
+  source,
+  sponsor,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -29,7 +31,13 @@ export function ProjectCard({
     >
       <Card radius="md" shadow="sm" className={classes.card}>
         <Card.Section>
-          <Image src={image} alt="Project Image" h={300} fit="contain" />
+          <Image
+            src={image}
+            alt="Project Image"
+            height={300}
+            fit="contain"
+            fallbackSrc="https://placehold.co/1000x600?text=Placeholder"
+          />
         </Card.Section>
 
         <Stack h="100%" justify="space-between" className={classes.content}>
@@ -40,24 +48,39 @@ export function ProjectCard({
             <Text>{description}</Text>
           </div>
           <Button.Group className={classes.buttonGroup} orientation="vertical">
-            <Button
-              component="a"
-              href={link}
-              target="_blank"
-              bg="gradient1"
-              className={classes.button}
-            >
-              VIEW PROJECT
-            </Button>
-            <Button
-              component="a"
-              href={link}
-              target="_blank"
-              bg="gradient1"
-              className={classes.button}
-            >
-              SOURCE CODE
-            </Button>
+            {link && (
+              <Button
+                component="a"
+                href={link}
+                target="_blank"
+                bg="gradient1"
+                className={classes.button}
+              >
+                VIEW PROJECT
+              </Button>
+            )}
+            {source && (
+              <Button
+                component="a"
+                href={link}
+                target="_blank"
+                bg="gradient1"
+                className={classes.button}
+              >
+                SOURCE CODE
+              </Button>
+            )}
+            {sponsor && (
+              <Button
+                component="a"
+                href={sponsor}
+                target="_blank"
+                bg="gradient1"
+                className={classes.button}
+              >
+                VIEW PROJECT SPONSOR
+              </Button>
+            )}
           </Button.Group>
         </Stack>
       </Card>
