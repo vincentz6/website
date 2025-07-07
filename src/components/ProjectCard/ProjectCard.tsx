@@ -6,7 +6,9 @@ type ProjectCardProps = {
   title: string;
   description: string;
   image: string;
-  link: string;
+  link?: string;
+  source?: string;
+  sponsor?: string;
 };
 
 export function ProjectCard({
@@ -27,7 +29,7 @@ export function ProjectCard({
     >
       <Card radius="md" shadow="sm" className={classes.card}>
         <Card.Section>
-          <Image src={image} alt="Project Image" h={300} />
+          <Image src={image} alt="Project Image" h={300} fit="contain" />
         </Card.Section>
 
         <Stack h="100%" justify="space-between" className={classes.content}>
