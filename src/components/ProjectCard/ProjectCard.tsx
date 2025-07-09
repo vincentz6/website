@@ -6,6 +6,7 @@ type ProjectCardProps = {
   title: string;
   description: string;
   image: string;
+  tech_stack: string[];
   link?: string;
   source?: string;
   sponsor?: string;
