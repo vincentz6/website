@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 180px);
+  height: calc(100vh - 180px);
   justify-content: space-between;
 }
 

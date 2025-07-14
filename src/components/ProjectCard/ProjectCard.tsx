@@ -1,12 +1,18 @@
 import { Card, Image, Title, Text, Button, Stack } from "@mantine/core";
 import { motion } from "framer-motion";
+import { TechStack } from "../TechStack/TechStack";
 import classes from "./ProjectCard.module.css";
+
+type Tech = {
+  name: string;
+  description: string;
+};
 
 type ProjectCardProps = {
   title: string;
   description: string;
   image: string;
-  tech_stack: string[];
+  tech_stack: Tech[];
   link?: string;
   source?: string;
   sponsor?: string;
@@ -16,6 +22,7 @@ export function ProjectCard({
   title,
   description,
   image,
+  tech_stack,
   link,
   source,
   sponsor,
@@ -35,7 +42,7 @@ export function ProjectCard({
           <Image
             src={image}
             alt="Project Image"
-            height={300}
+            height={200}
             fit="contain"
             fallbackSrc="https://placehold.co/1000x600?text=Placeholder"
           />
@@ -47,6 +54,7 @@ export function ProjectCard({
               {title}
             </Title>
             <Text>{description}</Text>
+            <TechStack stack={tech_stack} />
           </div>
           <Button.Group className={classes.buttonGroup} orientation="vertical">
             {link && (
