@@ -40,6 +40,7 @@ export const projects = [
     image: trivia,
     tech_stack: [
       { name: "React", description: "Frontend Framework" },
+      { name: "Node.js", description: "Backend Runtime Environment" },
       {
         name: "Socket.io",
         description: "WebSockets & Real-time Communication",
