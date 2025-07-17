@@ -1,6 +1,7 @@
 import { Card, Image, Title, Text, Button, Stack } from "@mantine/core";
 import { motion } from "framer-motion";
 import { TechStack } from "../TechStack/TechStack";
+import { IconBrandGithub } from "@tabler/icons-react";
 import classes from "./ProjectCard.module.css";
 
 type Tech = {
@@ -16,6 +17,7 @@ type ProjectCardProps = {
   link?: string;
   source?: string;
   sponsor?: string;
+  github?: string;
 };
 
 export function ProjectCard({
@@ -26,6 +28,7 @@ export function ProjectCard({
   link,
   source,
   sponsor,
+  github,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -42,15 +45,24 @@ export function ProjectCard({
           <Image
             src={image}
             alt="Project Image"
-            height={200}
+            h={200}
             fit="contain"
             fallbackSrc="https://placehold.co/1000x600?text=Placeholder"
           />
         </Card.Section>
-
-        <Stack h="100%" justify="space-between" className={classes.content}>
+        <Stack
+          className={classes.cardContent}
+          h={{
+            base: "43em",
+            xs: "35em",
+            sm: "43em",
+            md: "35em",
+            lg: "38em",
+            xl: "35em",
+          }}
+        >
           <div>
-            <Title order={3} my="sm">
+            <Title order={3} my="sm" className={classes.title}>
               {title}
             </Title>
             <Text>{description}</Text>
@@ -71,12 +83,12 @@ export function ProjectCard({
             {source && (
               <Button
                 component="a"
-                href={link}
+                href={source}
                 target="_blank"
                 bg="gradient1"
                 className={classes.button}
               >
-                SOURCE CODE
+                VIEW SOURCE CODE
               </Button>
             )}
             {sponsor && (
@@ -88,6 +100,18 @@ export function ProjectCard({
                 className={classes.button}
               >
                 VIEW PROJECT SPONSOR
+              </Button>
+            )}
+            {github && (
+              <Button
+                component="a"
+                href={github}
+                target="_blank"
+                bg="gradient1"
+                className={classes.button}
+              >
+                <IconBrandGithub size={20} className={classes.githubIcon} />
+                VISIT MY GITHUB
               </Button>
             )}
           </Button.Group>

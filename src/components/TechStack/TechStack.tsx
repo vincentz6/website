@@ -2,6 +2,7 @@ import {
   IconBrandFigma,
   IconBrandReact,
   IconBrandTypescript,
+  IconBrandMantine,
   IconBrandNodejs,
   IconBrandCSharp,
   IconBrandSocketIo,
@@ -10,6 +11,7 @@ import {
   IconBrandFirebase,
   IconBrandAws,
   IconAi,
+  IconBrandSpotifyFilled,
   IconBrandPython,
   IconCode,
 } from "@tabler/icons-react";
@@ -21,6 +23,7 @@ const iconMap: Record<string, React.JSX.Element> = {
   Figma: <IconBrandFigma />,
   React: <IconBrandReact />,
   TypeScript: <IconBrandTypescript />,
+  Mantine: <IconBrandMantine />,
   "Node.js": <IconBrandNodejs />,
   ".NET Framework": <IconBrandCSharp />,
   "Socket.io": <IconBrandSocketIo />,
@@ -31,6 +34,7 @@ const iconMap: Record<string, React.JSX.Element> = {
   Firebase: <IconBrandFirebase />,
   AWS: <IconBrandAws />,
   "Mistral AI": <IconAi />,
+  "Spotify API": <IconBrandSpotifyFilled />,
   Python: <IconBrandPython />,
 };
 

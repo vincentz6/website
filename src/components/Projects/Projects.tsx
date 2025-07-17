@@ -12,11 +12,10 @@ export function Projects() {
         MY PORTFOLIO
       </Heading>
       <Carousel
-        slideSize={{ base: "100%", sm: "50%", md: "33.333333%" }}
+        slideSize={{ base: "100%", sm: "50%", lg: "33.333333%" }}
         slideGap="md"
         controlSize={30}
         controlsOffset="-xs"
-        h="100%"
         px="2.5rem"
         py="md"
         emblaOptions={{
