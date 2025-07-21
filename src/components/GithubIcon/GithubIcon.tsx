@@ -19,7 +19,9 @@ export function GithubIcon() {
       <Tooltip
         label="GitHub"
         withArrow
-        transitionProps={{ transition: "fade", duration: 300 }}
+        color="gradient1"
+        transitionProps={{ transition: "pop", duration: 250 }}
+        closeDelay={200}
       >
         <IconBrandGithub strokeWidth={2} />
       </Tooltip>

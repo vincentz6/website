@@ -29,7 +29,8 @@ export function ColorSchemeToggle() {
       <Tooltip
         label={colorSchemeLabel[colorScheme]}
         withArrow
-        transitionProps={{ transition: "fade", duration: 300 }}
+        transitionProps={{ transition: "pop", duration: 250 }}
+        closeDelay={200}
       >
         {dark ? <IconSun /> : <IconMoon />}
       </Tooltip>

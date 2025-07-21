@@ -1,6 +1,16 @@
+.container {
+  position: relative;
+}
+
 .contact {
-    font-size: clamp(3rem, 7vw, 6rem);
-    font-family: var(--mantine-font-family-headings);
-    border-bottom: 0.125em solid;
-    line-height: 1;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-family: var(--mantine-font-family-headings);
+  border-bottom: 0.125em solid;
+  line-height: 1;
+}
+
+.scrollToTop {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
