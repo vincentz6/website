@@ -20,7 +20,7 @@ export function About() {
           I'm a Software Engineering graduate from the University of Calgary
           with a passion for exploring new technologies. I'm especially drawn to
           web development, frontend engineering, UI/UX design, and artificial
-          intelligence. My other interests include weightlifting, competitive
+          intelligence. My other interests include weightlifting, running, competitive
           gaming, and learning new languages. I'm currently seeking new
           opportunities that will help me develop both personally and
           professionally.

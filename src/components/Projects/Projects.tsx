@@ -9,7 +9,7 @@ export function Projects() {
   return (
     <Box mih="100vh" py="xl" px="md">
       <Heading id="projects" color="gradient1">
-        MY PORTFOLIO
+        MY PROJECTS
       </Heading>
       <Carousel
         slideSize={{ base: "100%", sm: "50%", lg: "33.333333%" }}

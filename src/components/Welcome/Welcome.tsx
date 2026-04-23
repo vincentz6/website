@@ -27,6 +27,8 @@ export function Welcome() {
               1500,
               "Hello! I'm Vincent,\n Gaming Connoisseur.",
               1500,
+              "Hello! I'm Vincent,\n Runner (Sometimes).",
+              1500,
             ]}
             wrapper="span"
             repeat={Infinity}

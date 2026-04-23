@@ -45,7 +45,7 @@ export function Navigation({
         <NavigationButton targetId="about">ABOUT</NavigationButton>
         <NavigationButton targetId="projects">PROJECTS</NavigationButton>
         <NavigationButton targetId="skills">SKILLS</NavigationButton>
-        <NavigationButton targetId="experience">EXPERIENCE</NavigationButton>
+        <NavigationButton targetId="experience">DEV JOURNEY</NavigationButton>
         <NavigationButton targetId="contact">CONTACT</NavigationButton>
       </Wrapper>
     </NavigationContext.Provider>

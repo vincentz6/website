@@ -13,7 +13,7 @@ export const projects = [
       "A van rental service simulation where users can browse available vans. This project was developed to gain hands-on experience with React Router for client-side routing and Firebase for backend services including authentication and database management.",
     image: vans,
     tech_stack: [TECH.REACT, TECH.FIREBASE],
-    link: "https://github.com/vincentz6",
+    // link: "https://github.com/vincentz6",
     source: "https://github.com/vincentz6",
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
       "A web application that uses AI to generate custom recipes based on ingredients provided by the user. The app allows users to input the ingredients they have on hand and receive recipe suggestions they can create using those ingredients.",
     image: chef,
     tech_stack: [TECH.REACT, TECH.MISTRALAI],
-    link: "https://github.com/vincentz6",
+    // link: "https://github.com/vincentz6",
     source: "https://github.com/vincentz6",
   },
   {
