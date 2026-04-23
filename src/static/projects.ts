@@ -14,7 +14,7 @@ export const projects = [
     image: vans,
     tech_stack: [TECH.REACT, TECH.FIREBASE],
     // link: "https://github.com/vincentz6",
-    source: "https://github.com/vincentz6",
+    source: "https://github.com/vincentz6/van-app",
   },
   {
     title: "LED Grow Light - Genoptic",
