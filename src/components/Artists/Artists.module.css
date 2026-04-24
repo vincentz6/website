@@ -46,6 +46,15 @@
   object-position: top;
 }
 
+[data-mantine-color-scheme="light"] .placeholder {
+  background-color: var(--mantine-color-cream-2);
+  color: var(--mantine-color-cream-1);
+}
+
+[data-mantine-color-scheme="dark"] .placeholder {
+  color: var(--mantine-color-shade-7);
+}
+
 .name {
   position: absolute;
   bottom: 0.75rem;

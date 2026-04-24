@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { Carousel } from "@mantine/carousel";
-import { Title, Card, Image, Skeleton, Badge } from "@mantine/core";
+import { Title, Card, Image, Skeleton, Badge, Box } from "@mantine/core";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { IconBrandSpotifyFilled } from "@tabler/icons-react";
+import { IconMusic } from "@tabler/icons-react";
 import { motion, useInView } from "framer-motion";
 import classes from "./Artists.module.css";
 
@@ -29,7 +30,7 @@ export function Artists() {
         const response = await fetch("/.netlify/functions/Spotify");
         if (!response.ok) {
           throw new Error(
-            `Failed to fetch artists. Status: ${response.status} ${response.statusText}`
+            `Failed to fetch artists. Status: ${response.status} ${response.statusText}`,
           );
         }
         const data = await response.json();
@@ -99,13 +100,24 @@ export function Artists() {
                   className={classes.card}
                 >
                   <Card.Section>
-                    <Image
-                      src={artist.image}
-                      alt="Artist Image"
-                      fit="cover"
-                      h={{ base: 300, xs: 400 }}
-                      className={classes.image}
-                    />
+                    {artist.image ? (
+                      <Image
+                        src={artist.image}
+                        alt={artist.name}
+                        fit="cover"
+                        h={{ base: 300, xs: 400 }}
+                        className={classes.image}
+                      />
+                    ) : (
+                      <Box
+                        h={{ base: 300, xs: 400 }}
+                        ta="center"
+                        pt="50"
+                        className={classes.placeholder}
+                      >
+                        <IconMusic size={300} />
+                      </Box>
+                    )}
                     <Title order={4} className={classes.name}>
                       {artist.name}
                     </Title>
