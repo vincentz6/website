@@ -48,12 +48,12 @@ export const projects = [
     source: "https://github.com/ryanitt/TriviaTitans",
   },
   {
-    title: "Chef Claude",
+    title: "AI Recipe Generator",
     description:
       "A web application that uses AI to generate custom recipes based on ingredients provided by the user. The app allows users to input the ingredients they have on hand and receive recipe suggestions they can create using those ingredients.",
     image: chef,
     tech_stack: [TECH.REACT, TECH.MISTRALAI],
-    // link: "https://github.com/vincentz6",
+    link: "https://voluble-semifreddo-767d6e.netlify.app/",
     source: "https://github.com/vincentz6",
   },
   {
